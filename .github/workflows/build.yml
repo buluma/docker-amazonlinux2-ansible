@@ -7,7 +7,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "10 1 * * 0"
+    - cron: "10 1 * *"
 
 jobs:
   # Test the image builds and works correctly.
@@ -26,6 +26,16 @@ jobs:
 
       - name: Verify Ansible is accessible in the built image.
         run: docker exec --tty test-container env TERM=xterm ansible --version
+      
+      - name: Create Issue
+        if: failure()
+        uses: buluma/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ADJECTIVE: failed
+          id: create-issue
+      - run: 'echo Created issue number ${{ steps.create-issue.outputs.number }}'
+      - run: 'echo Created ${{ steps.create-issue.outputs.url }}'
 
   # If on master branch, build and release image.
   release:
