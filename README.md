@@ -1,6 +1,6 @@
 # Amazon Linux 2 Ansible Test Image
 
-[![Docker Automated build](https://img.shields.io/docker/automated/buluma/docker-amazonlinux2-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/buluma/docker-amazonlinux2-ansible/) [![Build Status](https://travis-ci.com/buluma/docker-amazonlinux2-ansible.svg?branch=main)](https://travis-ci.com/buluma/docker-amazonlinux2-ansible) [![Docker](https://github.com/buluma/docker-amazonlinux2-ansible/actions/workflows/docker-publish.yml/badge.svg?branch=main)](https://github.com/buluma/docker-amazonlinux2-ansible/actions/workflows/docker-publish.yml) [![Docker pulls](https://img.shields.io/docker/pulls/buluma/docker-amazonlinux2-ansible)](https://hub.docker.com/r/buluma/docker-amazonlinux2-ansible/)
+[![Docker Automated build](https://img.shields.io/docker/automated/buluma/docker-amazonlinux2-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/buluma/docker-amazonlinux2-ansible/) [![Build and Push Container](https://github.com/buluma/docker-amazonlinux2-ansible/actions/workflows/build.yml/badge.svg)](https://github.com/buluma/docker-amazonlinux2-ansible/actions/workflows/build.yml) [![Docker pulls](https://img.shields.io/docker/pulls/buluma/docker-amazonlinux2-ansible)](https://hub.docker.com/r/buluma/docker-amazonlinux2-ansible/)
 
 Amazon Linux 2 Docker container for Ansible playbook and role testing.
 
